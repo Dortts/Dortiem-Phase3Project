@@ -24,6 +24,13 @@ Identifier columns (`phone number`, `area code`, `state`) were removed as they a
 
 ---
 
+## Primary Result
+
+Most customers did not churn:
+![alt text](<Target Variable Distribution.png>)
+
+---
+
 ## Modeling
 
 Three models were built iteratively:
@@ -51,6 +58,8 @@ All models used `class_weight='balanced'` to handle the imbalanced target. Data 
 **Selected model: Logistic Regression**
 
 Despite being the simplest model, Logistic Regression achieved the highest test recall (74.2%) with the lowest overfit gap (0.022), meaning it generalizes reliably to new, unseen customers. Random Forest had the best ROC-AUC but a large overfit gap (0.208), making it unreliable for real-world deployment without further tuning.
+
+Comparison based on ROC/AUC curve: ![alt text](<Images/ROC comparison.png>)
 
 ---
 
