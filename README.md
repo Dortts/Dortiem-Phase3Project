@@ -59,7 +59,7 @@ All models used `class_weight='balanced'` to handle the imbalanced target. Data 
 
 Despite being the simplest model, Logistic Regression achieved the highest test recall (74.2%) with the lowest overfit gap (0.022), meaning it generalizes reliably to new, unseen customers. Random Forest had the best ROC-AUC but a large overfit gap (0.208), making it unreliable for real-world deployment without further tuning.
 
-Comparison based on ROC/AUC curve: ![alt text](<Images/ROC comparison.png>)
+Comparison based on ROC/AUC curve:![alt text](<ROC comparison.png>)
 
 ---
 
